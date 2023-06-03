@@ -1,0 +1,30 @@
+/*Завдання: Написати програму,  в якій користувач вводить число, 
+і на екран має вивестися результат ділення числа на числа від -10 до +10. 
+(Використати оператор continue при значенні 0)*/
+
+
+
+   #include <iostream>
+using namespace std;
+int main() {
+    double NUM;
+
+    cout << "введіть число: ";
+    cin >> NUM;
+
+    if (NUM == 0) {
+        cout << "підсумок ділення: 0, адже на 0 ділити не можна!" << endl;
+    
+} else {
+        for (int i = -10; i <= 10; i++) {
+            if (i == 0) {
+                continue;
+            }
+            double result = NUM / i;
+            cout << NUM << "/" << i << "=" << result << endl;
+        }
+    }
+
+    return 0;
+}
+    
